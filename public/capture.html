@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture Photo Wall Sprite</title>
+    <link rel="stylesheet" href="capture.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Capture Your Poses</h1>
+        <p>Follow the voice prompts. Press <kbd>Space</kbd> or click <strong>Snap</strong> to take each photo.</p>
+    </header>
+
+    <main>
+        <div class="capture-container">
+            <div class="video-wrapper">
+                <video id="webcam" width="300" height="400" autoplay playsinline></video>
+                <canvas id="guide-overlay" width="300" height="400"></canvas>
+            </div>
+
+            <div class="controls">
+                <h2 id="instruction-text">Please allow webcam access...</h2>
+                <button id="snap-btn" class="btn primary-btn" disabled>Snap Photo</button>
+                <div class="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="result-container" id="result-container" style="display: none;">
+            <h3>Your Spritesheet</h3>
+            <div class="canvas-wrapper">
+                <canvas id="spritesheet-canvas" width="3000" height="400"></canvas>
+            </div>
+
+            <div class="center-point-selection">
+                <h3>Select Center Point</h3>
+                <p>Click precisely between your eyes on the image below.</p>
+                <div class="center-canvas-wrapper">
+                    <canvas id="center-select-canvas" width="300" height="400"></canvas>
+                </div>
+            </div>
+
+            <div class="save-controls">
+                <input type="text" id="filename-input" placeholder="Enter your name (e.g. john_doe)" />
+                <button id="save-btn" class="btn success-btn" disabled>Save to Server</button>
+            </div>
+            <p id="save-status"></p>
+        </div>
+    </main>
+
+    <!-- Navigation back to wall -->
+    <a href="index.html" class="back-link">← Back to Photo Wall</a>
+
+    <script src="capture.js"></script>
+</body>
+
+</html>

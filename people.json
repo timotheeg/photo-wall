@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "spriteUrl": "sprite1.png",
+        "centerPoint": {
+            "x": 150,
+            "y": 150
+        }
+    },
+    {
+        "id": 2,
+        "spriteUrl": "sprite2.png",
+        "centerPoint": {
+            "x": 150,
+            "y": 150
+        }
+    },
+    {
+        "id": 3,
+        "spriteUrl": "sprite1.png",
+        "centerPoint": {
+            "x": 150,
+            "y": 150
+        }
+    },
+    {
+        "id": 4,
+        "spriteUrl": "sprite2.png",
+        "centerPoint": {
+            "x": 150,
+            "y": 150
+        }
+    },
+    {
+        "id": 5,
+        "spriteUrl": "sprite1.png",
+        "centerPoint": {
+            "x": 150,
+            "y": 150
+        }
+    }
+]

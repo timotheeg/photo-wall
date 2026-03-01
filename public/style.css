@@ -1,0 +1,76 @@
+:root {
+    --bg-color: #0f1115;
+    --text-color: #ffffff;
+    --accent-color: #3b82f6;
+    --card-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.5);
+    --card-hover-shadow: 0 20px 40px -5px rgba(59, 130, 246, 0.3);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    /* Prevent scrolling entirely */
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(15, 17, 21, 1), rgba(15, 17, 21, 0));
+    z-index: 10;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #fff, #a5b4fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.5px;
+}
+
+p {
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.wall-grid {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* Dimensions will be handled specifically by the JS grid logic to pack the screen */
+}
+
+.snapshot {
+    position: absolute;
+    /* width and height will be set dynamically via JS */
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    background-repeat: no-repeat;
+    /* background-size set dynamically */
+    /* background-position set dynamically */
+}
