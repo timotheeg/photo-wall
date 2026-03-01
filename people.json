@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": "sprite1",
         "spriteUrl": "sprite1.png",
         "centerPoint": {
             "x": 150,
@@ -8,7 +8,7 @@
         }
     },
     {
-        "id": 2,
+        "id": "sprite2",
         "spriteUrl": "sprite2.png",
         "centerPoint": {
             "x": 150,
@@ -16,7 +16,7 @@
         }
     },
     {
-        "id": 3,
+        "id": "sprite3",
         "spriteUrl": "sprite1.png",
         "centerPoint": {
             "x": 150,
@@ -24,7 +24,7 @@
         }
     },
     {
-        "id": 4,
+        "id": "sprite4",
         "spriteUrl": "sprite2.png",
         "centerPoint": {
             "x": 150,
@@ -32,7 +32,7 @@
         }
     },
     {
-        "id": 5,
+        "id": "sprite5",
         "spriteUrl": "sprite1.png",
         "centerPoint": {
             "x": 150,

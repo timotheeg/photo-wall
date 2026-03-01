@@ -70,7 +70,7 @@ app.post('/api/save-sprite', (req, res) => {
             const existingPersonIndex = people.findIndex(p => p.spriteUrl === spriteUrl);
 
             const newPersonData = {
-                id: existingPersonIndex !== -1 ? people[existingPersonIndex].id : Date.now(),
+                id: filename,
                 spriteUrl: spriteUrl,
                 centerPoint: centerPoint || { x: 150, y: 150 } // Default if missing
             };
